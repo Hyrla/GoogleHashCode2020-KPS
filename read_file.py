@@ -30,3 +30,4 @@ def reading_file(name, books, libraries):
         #time.sleep(0.01)
 
     mon_fichier.close()
+    return int(nb_days_scanning)
