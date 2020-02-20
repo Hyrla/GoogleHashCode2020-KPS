@@ -3,6 +3,8 @@ def write_file(libraries):
     fichier.write(str(len(libraries)))
     fichier.write("\n")
     for lib in libraries:
+        if len(lib.books)<=0 :
+            continue
         fichier.write(str(lib.id) + " " + str(len(lib.books)))
         fichier.write("\n")
 
