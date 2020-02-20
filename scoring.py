@@ -23,8 +23,10 @@ def scoreAllLibs(libraries, total_days):
             i.max_score = scoreLib(i,total_days)
         libraries.sort(key = lambda x:x.max_score)
         libToScan.append(libraries[0])
-        libraries.pop(1)
+        libraries.pop(0)
         for i in libraries:
+            print(i.books)
             i.books = [item for item in i.books if not isInLib(libToScan[-1],item.id)]
+            print(i.books)
     libToScan.append(libraries[0])
     return libToScan
