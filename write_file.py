@@ -1,5 +1,5 @@
 def write_file(libraries):
-    fichier = open("output.txt", "w")
+    fichier = open("outputB.txt", "w")
     fichier.write(str(len(libraries)))
     fichier.write("\n")
     for lib in libraries:

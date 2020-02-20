@@ -5,7 +5,7 @@ import write_file
 books = []
 libraries = []
 
-nbDays = read_file.reading_file("a_example.txt", books, libraries)
+nbDays = read_file.reading_file("SubmitInput/b_read_on.txt", books, libraries)
 #print(books)
 #print(libraries)
 #librarie = libraries[:]
