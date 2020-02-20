@@ -1,0 +1,2 @@
+class book:
+    print("a")
