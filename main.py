@@ -1,2 +1,0 @@
-class book:
-    print("a")
