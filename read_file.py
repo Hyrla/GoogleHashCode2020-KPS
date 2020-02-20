@@ -19,7 +19,7 @@ def reading_file(name, books, libraries):
         if len(library) > 2:
             print(idx, library)
             if idx % 2 == 0:
-                new_library = Library(idx/2, [], int(library.split(" ")[1]), int(library.split(" ")[2]))
+                new_library = Library(int(idx/2), [], int(library.split(" ")[1]), int(library.split(" ")[2]))
                 libraries.append(new_library)
             else:
                 libraries[-1].books = []
