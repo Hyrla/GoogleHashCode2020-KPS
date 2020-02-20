@@ -25,8 +25,8 @@ def scoreAllLibs(libraries, total_days):
         libToScan.append(libraries[0])
         libraries.pop(0)
         for i in libraries:
-            print(i.books)
+            #print(i.books)
             i.books = [item for item in i.books if not isInLib(libToScan[-1],item.id)]
-            print(i.books)
+            #print(i.books)
     libToScan.append(libraries[0])
     return libToScan

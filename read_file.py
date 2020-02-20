@@ -4,7 +4,7 @@ import time
 
 
 def reading_file(name, books, libraries):
-    print("Reading file")
+    #print("Reading file")
     mon_fichier = open(name, "r")
     content = mon_fichier.readlines()
     nb_books = content[0].split(" ")[0]
@@ -17,7 +17,7 @@ def reading_file(name, books, libraries):
 
     for idx, library in enumerate(content[2:]):
         if len(library) > 2:
-            print(idx, library)
+            #print(idx, library)
             if idx % 2 == 0:
                 new_library = Library(int(idx/2), [], int(library.split(" ")[1]), int(library.split(" ")[2]))
                 libraries.append(new_library)

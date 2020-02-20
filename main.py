@@ -6,8 +6,8 @@ books = []
 libraries = []
 
 nbDays = read_file.reading_file("a_example.txt", books, libraries)
-print(books)
-print(libraries)
+#print(books)
+#print(libraries)
 #librarie = libraries[:]
 libToScan = scoring.scoreAllLibs(libraries,nbDays)
 #print(libToScan)
